@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Shop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div><h3 class="title">Tech-Shop</h3></div>
+      <div class="head">
+        <li><i class="fa-solid fa-magnifying-glass"></i></li>
+        <li><i class="fa-solid fa-cart-shopping"></i><span class="quantity">0</span></li>
+        <li><i class="fa-solid fa-user"></i></li>
+      </div>
+    </header>
+
+    <div class="slider" >
+      <div class="corosal" >
+        <h2>OVER EAR</h2>
+        <div class="content1">
+          <p class="text1">JBL Live 660NC</p>
+          <p class="text2">Keep The Noice Out, Or In. You Choose.</p>
+          <p ><span>₹9,999</span>  <span style="text-decoration:line-through;">₹14,999</span></p>
+          <button class="shopNow" id="shopNow">Shop Now</button>
+        </div>
+        <img src="/images/products/jbl660nc-1.png" alt="sony"  class="dataimage"/>
+      </div>
+  
+      <div class="corosal" style="display: none;">
+        <h2>OVER EAR</h2>
+        <div class="content1">
+          <p class="text1">boat Airdopes 131</p>
+          <p class="text2">Featherweight For Comfort All-Day.</p>
+          <p ><span>₹1,099</span>  <span style="text-decoration:line-through;" >₹2,990</span></p>
+          <a href="./product_Details.html"><button class="shopNow">Shop Now</button></a>
+        </div>
+        <img src="/images/products/boat131-3.png" alt="sony"  class="dataimage"/>
+      </div>
+  
+      <div class="corosal" style="display: none;">
+        <h2>OVER EAR</h2>
+        <div class="content1">
+          <p class="text1">Sony WH-XB910N</p>
+          <p class="text2">Give your Favourite Music A Boost.</p>
+          <p ><span>₹13,489</span>  <span style="text-decoration:line-through;">₹19,990</span></p>
+          <a href="./product_Details.html"><button class="shopNow">Shop Now</button></a>
+        </div>
+        <img src="/images/products/sonyXb910n-1.png" alt="sony"  class="dataimage"/>
+      </div>
+    </div>
+    <div class="indicators">
+      <span class="indicator active" data-index="0"></span>
+      <span class="indicator" data-index="1"></span>
+      <span class="indicator" data-index="2"></span>
+    </div>
+
+    
+    <h2 class="subHead">Feature Product</h2>
+    
+    <div class="slider1"> 
+      <div class="corosal1">
+        <p>JBL Endurance Run sports</p>
+        <img src="/images/products/jbl-endu-1.png">
+        <p><span>₹999</span> <span style="text-decoration:line-through;">₹1,599</span></p>
+      </div>
+      <div class="corosal1">
+        <p>Boat Airdopes 203</p>
+        <img src="/images/products/boat203-1.png">
+        <p><span>₹1,074</span> <span style="text-decoration:line-through;">₹3,999</span></p>
+      </div>
+      <div class="corosal1">
+        <p>Boat Rockerz 518</p>
+        <img src="/images/products/boat518-1.png">
+        <p><span>₹1,299</span> <span style="text-decoration:line-through;">₹3,990</span></p>
+      </div>
+      <div class="corosal1">
+        <p>JBL Tune 760Nc</p>
+        <img src="/images/products/jbl760nc-1.png">
+        <p><span>₹5,999</span> <span style="text-decoration:line-through;">₹7,990</span></p>
+      </div>
+      <div class="corosal1">
+        <p>Boat Rockerz 255</p>
+        <img src="/images/products/boat255r-1.png">
+        <p><span>₹899</span> <span style="text-decoration:line-through;">₹2,990</span></p>
+      </div>
+    </div>
+
+<!-- Top Product Data -->
+    <div>
+      <h2 class="subHead">Top Product</h2>  
+      <ul class="link">
+        <li class="linkBtn" id="all">All</li>
+        <li class="linkBtn" id="headPhones">Headphones</li>
+        <li class="linkBtn" id="earbuds">Earbuds</li>
+        <li class="linkBtn" id="earphones">Earphones</li>
+        <li class="linkBtn" id="neckband">Neckbands</li>
+      </ul>
+    </div>
+<!-- Cards -->
+    <div class="cards" id="filtering1"></div>
+    <div class="cards" id="filtering2"></div>
+    <div class="cards" id="filtering3"></div>
+    <div class="cards" id="filtering4"></div>
+    <div class="cards" id="filtering5"></div>
+    
+
+
+
+<!-- Our Advantages -->
+    <h2 class="subHead">Our Advantages</h2>
+    <div class="mainAdvantages">
+      <div class="advantages">
+        <i class="fa-solid fa-truck"></i>
+        <div>
+          <p class="thick">Express Delivery</p>
+          <p>Ships in 24 Hours</p>
+        </div>
+      </div>
+      <div class="advantages">
+        <i class="fa-solid fa-shield-halved"></i>
+        <div>
+          <p class="thick">Brand Warranty</p>
+          <p>100% Original product</p>
+        </div>
+      </div>
+      <div class="advantages">
+        <i class="fa-solid fa-tags"></i>
+        <div>
+          <p class="thick">Exciting Deals</p>
+          <p>On all prepaid orders</p>
+        </div>
+      </div>
+      <div class="advantages">
+        <i class="fa-solid fa-credit-card"></i>
+        <div>
+          <p class="thick">Secure Payments</p>
+          <p>SSL/Secure Certificate</p>
+        </div>
+      </div>
+    </div>
+
+  <!-- footer -->
+    <footer>
+      <div class="footer1">
+        <div class="ft1">
+          <h2>Tech-Shop</h2>
+          <p>Subscribe to our Email alerts to receive early discount offers, and new products info.</p>
+          <input type="email" placeholder="Email Address*"><br>
+          <button>Subscribe</button>
+        </div>
+  
+        <div class="ft2">
+          <h3>Help</h3>
+          <ul>
+            <li>FAQs</li>
+            <li>Track Order</li>
+            <li>Cancel Order</li>
+            <li>Return Order</li>
+            <li>Warranty info</li>
+          </ul>
+        </div>
+  
+        <div class="ft2">
+          <h3>Policies</h3>
+          <ul>
+            <li>Return Policy</li>
+            <li>Security</li>
+            <li>Sitemap</li>
+            <li>Privacy Policy</li>
+            <li>Terms & Conditions</li>
+          </ul>
+        </div>
+  
+        <div class="ft2">
+          <h3>Company</h3>
+          <ul>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Service Centers</li>
+            <li>Careers</li>
+            <li>Affiliates</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="footer2">
+      <p class="text">2023|All Rights Reserved.Built by|Jayasri</p>
+      <p class="logo">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+      </p>
+      </div>
+    </footer>
+
+    
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
+ 

@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to lech-shop</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <div class="container" id="signupContainer">
+        <h2>Signup</h2>
+        <p class="login"><span>already have an account?</span>  <span><a href="#" id="showLogin" ><b>Login</b></a></span></p>
+        <input type="text" name="Username" id="username" placeholder="username"><br>
+        <input type="email" name="email" id="useremail" placeholder="email"><br>
+        <input type="password" name="password" id="userpwd" placeholder="password"><br>
+        <input type="password" name="confirm password" id="confirmPassword" placeholder="confirm password"><br>
+        <button id="SignupBtn">Signup</button>
+
+        <p class="line">or login with</p>
+        <div class="socialMedia">
+            <div class="fb">Facebook</div>
+            <div class="g">Google</div>
+            <div class="t">Twitter</div>
+        </div>  
+   </div> 
+   
+   <div class="container" id="loginContainer" style="display: none;">
+        <h2>Login</h2>
+        <p class="login"><span>don't have an account?</span>  <span><a href="#" id="showSignup" ><b>Signup</b></a></span></p>
+        <input type="email" name="email" id="loginEmail" placeholder="email" ><br>
+        <input type="password" name="password" id="loginPassword" placeholder="password" ><br>
+        <button id="loginBtn" onclick="loginBtn()">Login</button>
+
+        <p class="line">or login with</p>
+        <div class="socialMedia">
+            <div class="fb">Facebook</div>
+            <div class="g">Google</div>
+            <div class="t">Twitter</div>
+        </div>
+   </div> 
+
+   <script src="./index.js"></script>
+</body>
+</html>
